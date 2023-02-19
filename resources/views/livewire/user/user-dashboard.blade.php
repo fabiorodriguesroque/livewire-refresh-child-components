@@ -16,4 +16,6 @@
             </div>
         </div>
     </div>
+
+    <div>@livewire('modals.add-task-modal')</div>
 </x-app-layout>
