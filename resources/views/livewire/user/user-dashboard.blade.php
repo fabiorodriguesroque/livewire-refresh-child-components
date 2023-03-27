@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-4">
             @foreach ($users as $user)
-                @livewire('user.user-card', ['user' => $user])
+                <livewire:user.user-card :user="$user" :wire:key="'user-card-'.$user->id">
             @endforeach
 
             <div>
@@ -17,5 +17,5 @@
         </div>
     </div>
 
-    <div>@livewire('modals.add-task-modal')</div>
+    <div><livewire:modals.add-task-modal /></div>
 </x-app-layout>

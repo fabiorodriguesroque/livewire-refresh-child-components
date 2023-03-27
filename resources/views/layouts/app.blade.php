@@ -15,7 +15,7 @@
 
         <!-- Styles -->
         @livewireStyles
-        
+
         <style>
             [x-cloak] {
                 display: none;
